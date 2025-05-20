@@ -17,6 +17,7 @@ Este repositório contém documentação detalhada sobre o processo de criação
 ## Introdução ao Azure
 
 O Microsoft Azure é uma plataforma de computação em nuvem que oferece uma ampla gama de serviços, incluindo máquinas virtuais, bancos de dados, armazenamento, IA e muito mais. Neste laboratório, foco na criação de uma máquina virtual Windows.
+![image](https://github.com/user-attachments/assets/bde2e764-5b4e-4eff-8b67-5a18ed733cb3)
 
 ## Preparação do Ambiente
 
