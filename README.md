@@ -17,7 +17,6 @@ Este repositório contém documentação detalhada sobre o processo de criação
 ## Introdução ao Azure
 
 O Microsoft Azure é uma plataforma de computação em nuvem que oferece uma ampla gama de serviços, incluindo máquinas virtuais, bancos de dados, armazenamento, IA e muito mais. Neste laboratório, foco na criação de uma máquina virtual Windows.
-![image](https://github.com/user-attachments/assets/bde2e764-5b4e-4eff-8b67-5a18ed733cb3)
 
 ## Preparação do Ambiente
 
@@ -29,9 +28,61 @@ Antes de criar uma VM, é necessário:
 ## Criação da Máquina Virtual
 
 ### Passo 1: Acessar o Portal Azure
+![image](https://github.com/user-attachments/assets/146c2ae5-d04e-4d75-acbd-b894e79e240c)
+Guia: Criação de VM no Azure e Documentação no GitHub
+Etapa 1: Acessar o Portal Azure
 
+Acesse o portal Azure em portal.azure.com
+Faça login com suas credenciais da conta que você já criou
 
 ### Passo 2: Iniciar a Criação da VM
+No portal Azure, clique em "Criar um recurso" no canto superior esquerdo
+Procure por "Máquina Virtual" na barra de pesquisa e selecione esta opção
+Clique em "Criar" para iniciar o processo de criação da VM
+Na aba "Básico", preencha as informações:
+
+Assinatura: Selecione sua assinatura Azure
+Grupo de recursos: Crie um novo (ex: "lab-vm-resource-group")
+Nome da máquina virtual: Escolha um nome único (ex: "vm-windows-lab")
+Região: Selecione a região mais próxima (ex: Brazil South)
+Opções de disponibilidade: Nenhuma redundância de infraestrutura
+Tipo de segurança: Standard
+Imagem: Windows 10/11 ou Windows Server 2019/2022
+Tamanho: Standard_B2s (2vCPUs, 4GB RAM) ou outro tamanho básico
+Nome de usuário: Crie um nome de usuário para acesso
+Senha: Defina uma senha forte
+Portas de entrada públicas: Permitir RDP (3389)
+
+
+Na aba "Discos":
+
+Tipo de disco do SO: SSD Standard
+Mantenha as configurações padrão para os outros campos
+
+
+Na aba "Rede":
+
+Rede virtual: Mantenha a rede padrão criada automaticamente
+Sub-rede: Mantenha a opção padrão
+IP público: Criar novo
+Grupo de segurança de rede: Básico
+Selecione as portas de entrada: RDP (3389)
+
+
+Nas abas "Gerenciamento", "Avançado" e "Tags":
+
+Mantenha as configurações padrão
+
+
+Na aba "Revisar + criar":
+
+Revise todas as configurações
+Clique em "Criar"
+
+
+Aguarde a implantação da VM (pode levar alguns minutos)
+
+![image](https://github.com/user-attachments/assets/62eee80a-1bc7-46dc-bd39-bdae631f66c3)
 
 
 ### Passo 3: Configurações Básicas
@@ -51,13 +102,25 @@ Descreva como a rede foi configurada, incluindo:
 - IP público
 - Grupo de segurança de rede
 - Regras de entrada/saída
+- ![image](https://github.com/user-attachments/assets/261a36b8-a60c-48ff-9db0-ba1227b5730e)
+
 
 ## Conexão à VM
+Conectar-se à Máquina Virtual
+
+Após a criação, vá para o recurso da VM
+Clique em "Conectar" no menu à esquerda
+Selecione "RDP" e faça download do arquivo RDP
+Abra o arquivo e insira suas credenciais quando solicitado
+Explore a máquina virtual para verificar se está funcionando corretamente
 
 Detalhe como se conectar à VM usando RDP:
 - Download do arquivo RDP
 - Processo de autenticação
 - Solução de problemas comuns de conexão
+
+- ![image](https://github.com/user-attachments/assets/a5edc6da-7a5a-46eb-bce7-0f8a3970645d)
+
 
 ## Considerações de Segurança
 
